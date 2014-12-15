@@ -1,7 +1,13 @@
-beatport
+Beatport API Wrapper
 ========
 
 Handles authentication for the Beatport API
+
+Installation
+=========
+```
+python setup.py install
+```
 
 Basic Use
 =========
