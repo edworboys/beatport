@@ -1,15 +1,15 @@
 import beatport
 
 try:
-	beatport = beatport.API()
-	beatport.start()
+    beatport = beatport.API()
+    beatport.start()
 
-	ids = ','.join(['43949','8190'])
-	data = {'ids':ids}
+    ids = ','.join(['43949','8190'])
+    data = {'ids':ids}
 
-	response = beatport.request('catalog/3/releases', data)
+    response = beatport.request('catalog/3/releases', data)
 
-	print response
+    print response
 except Exception as e:
-	print e
-	raise
+    print e
+    raise

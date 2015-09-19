@@ -1,2 +1,8 @@
 rauth
+
+# needed for requests SSL
+pyopenssl
+ndg-httpsclient
+pyasn1
+
 requests
