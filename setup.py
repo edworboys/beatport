@@ -4,7 +4,7 @@ from setuptools import setup
 
 
 def parse_requirements(filename):
-    return list(filter(lambda line: (line.strip())[0] != '#',
+    return list(filter(lambda line: (len(line) != 0 and line.strip()[0] != '#'),
                       [line.strip() for line in open(filename).readlines()]))
 
 
