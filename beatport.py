@@ -24,7 +24,7 @@ class API:
 			    base_url='https://oauth-api.beatport.com/json/catalog')
 
 			request_token, request_token_secret = beatport.get_request_token(method='POST', data={
-			    'oauth_callback': 'http://www.beatport.com'})
+			    'oauth_callback': 'http://oauth-api.beatport.com'})
 
 			authorize_url = beatport.get_authorize_url(request_token)
 
